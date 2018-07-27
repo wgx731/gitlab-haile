@@ -1,6 +1,18 @@
 Gitlab Haile
 ========================
 
+
+![Docker Automated build](https://img.shields.io/docker/automated/wgx731/gitlab-haile.svg?style=flat-square)
+
+[![GitHub issues](https://img.shields.io/github/issues/wgx731/gitlab-haile.svg?style=flat-square)](https://github.com/wgx731/gitlab-haile/issues)
+
+[![GitHub forks](https://img.shields.io/github/forks/wgx731/gitlab-haile.svg?style=flat-square)](https://github.com/wgx731/gitlab-haile/network)
+
+[![GitHub stars](https://img.shields.io/github/stars/wgx731/gitlab-haile.svg?style=flat-square)](https://github.com/wgx731/gitlab-haile/stargazers)
+
+[![GitHub license](https://img.shields.io/github/license/wgx731/gitlab-haile.svg?style=flat-square)](https://github.com/wgx731/gitlab-haile/blob/master/LICENSE)
+
+
 ## Idea Source
 
 [Famous Marathon Runner](https://en.wikipedia.org/wiki/Marathon) as [Gitlab Runner](https://docs.gitlab.com/runner) docker image :runner:

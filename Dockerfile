@@ -1,15 +1,23 @@
 FROM alpine:3.8
 MAINTAINER Wang Eric GaoXiang <wgx731@gmail.com>
 
-# install packages and setup working directory
+# 1. install packages through apk
+# 2. setup working directory
+# 3. create runner user
 RUN apk update && \
   apk add docker=18.03.1-r0 \
     openjdk8=8.171.11-r0 \
     bash=4.4.19-r1 && \
-    mkdir -p /build
+    mkdir -p /build && \
+    adduser \
+      -h /build \
+      -s /bin/bash \
+      -D \
+      -u 9527 \
+      runner
 
-# running as guest user
-USER guest
+# change to runner user
+USER runner
 
 # create working directory
 WORKDIR /build

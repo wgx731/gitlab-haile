@@ -22,7 +22,6 @@ RUN apk update && \
       runner && \
     echo "runner ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-
 # change to runner user
 USER runner
 

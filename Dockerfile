@@ -6,8 +6,8 @@ MAINTAINER Wang Eric GaoXiang <wgx731@gmail.com>
 # 3. runner home directory
 # 4. create runner user
 RUN apk update && \
-    bash=4.4.19-r1 \
-    npm=8.11.3-r1 && \
+    apk add bash=4.4.19-r1 \
+    npm=8.11.4-r0 && \
     pip install apimatic-cli==2.3 && \
     npm i -g restdocs-to-postman@v2.0.0 && \
     mkdir -p /playground && \
